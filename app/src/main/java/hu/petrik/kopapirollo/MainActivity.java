@@ -7,6 +7,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -28,6 +29,24 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 valasztas.setImageResource(R.drawable.rock);
+                int veletlen = (int)(Math.random()*3+1);
+                if (veletlen ==1)
+                {
+                    gep.setImageResource(R.drawable.rock);
+                    Toast.makeText(MainActivity.this, "Döntetlen", Toast.LENGTH_SHORT).show();
+                }
+                if (veletlen ==2)
+                {
+                    gep.setImageResource(R.drawable.paper);
+                    Toast.makeText(MainActivity.this, "A gép nyert", Toast.LENGTH_SHORT).show();
+                    
+                }
+                if (veletlen ==1)
+                {
+                    gep.setImageResource(R.drawable.scissors);
+                    Toast.makeText(MainActivity.this, "A játékos nyert", Toast.LENGTH_SHORT).show();
+                }
+
             }
         });
 
@@ -36,6 +55,23 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 valasztas.setImageResource(R.drawable.paper);
+                int veletlen = (int)(Math.random()*3+1);
+                if (veletlen ==1)
+                {
+                    gep.setImageResource(R.drawable.rock);
+                    Toast.makeText(MainActivity.this, "A játékos nyert", Toast.LENGTH_SHORT).show();
+                }
+                if (veletlen ==2)
+                {
+                    gep.setImageResource(R.drawable.paper);
+                    Toast.makeText(MainActivity.this, "Döntetlen", Toast.LENGTH_SHORT).show();
+                }
+                if (veletlen ==1)
+                {
+                    gep.setImageResource(R.drawable.scissors);
+                    Toast.makeText(MainActivity.this, "A gép nyert", Toast.LENGTH_SHORT).show();
+                }
+
             }
         });
 
@@ -44,22 +80,28 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 valasztas.setImageResource(R.drawable.scissors);
+                int veletlen = (int)(Math.random()*3+1);
+                if (veletlen ==1)
+                {
+                    gep.setImageResource(R.drawable.rock);
+                    Toast.makeText(MainActivity.this, "A gép nyert", Toast.LENGTH_SHORT).show();
+                }
+                if (veletlen ==2)
+                {
+                    gep.setImageResource(R.drawable.paper);
+                    Toast.makeText(MainActivity.this, "A játékos nyert", Toast.LENGTH_SHORT).show();
+                }
+                if (veletlen ==1)
+                {
+                    gep.setImageResource(R.drawable.scissors);
+                    Toast.makeText(MainActivity.this, "Döntetlen", Toast.LENGTH_SHORT).show();
+                }
+
             }
         });
 
 
-         int veletlen = (int)(Math.random()*3+1);
-         if (veletlen ==1)
-         {
-             gep.setImageResource(R.drawable.rock);
-         }
-        if (veletlen ==2)
-        {
-            gep.setImageResource(R.drawable.paper);
-        }
-        if (veletlen ==1)
-        {
-            gep.setImageResource(R.drawable.scissors);
-        }
+
+
     }
 }
