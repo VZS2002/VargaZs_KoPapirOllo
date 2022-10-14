@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <ImageView
+        android:id="@+id/valasztas"
+        android:layout_width="183dp"
+        android:layout_height="163dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/rock"
+
+        ></ImageView>
+
+    <TextView
+
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_below="@id/valasztas"
+        android:text="A te választásod"
+        android:textSize="30dp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/szoveg1"
+        ></TextView>
+
+
+    <ImageView
+        android:id="@+id/gep"
+        android:layout_width="169dp"
+        android:layout_height="172dp"
+        android:layout_below="@+id/szoveg1"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/rock">
+
+
+    </ImageView>
+
+    <TextView
+
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_below="@id/gep"
+        android:text="A gép választása"
+        android:textSize="30dp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/szoveg2"
+        ></TextView>
+
+
+    <LinearLayout
+
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/szoveg2"
+        android:layout_centerHorizontal="true"
+android:layout_marginTop="20dp"
+        android:id="@+id/eredmenyek"
+
+        >
+
+
+        <TextView
+
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+
+            android:text="Eredmény: "
+            android:textSize="20sp"
+
+
+            ></TextView>
+        <TextView
+
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+
+            android:text="Ember: 0 "
+            android:textSize="20sp"
+
+
+            ></TextView>
+
+        <TextView
+
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+
+            android:text="Computer: 0"
+            android:textSize="20dp"
+
+
+            ></TextView>
+    </LinearLayout>
+
+    <LinearLayout
+
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/eredmenyek"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+
+        >
+
+        <Button
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="Kő"
+android:id="@+id/ko"
+
+            android:layout_margin="10dp"
+
+            >
+
+
+
+        </Button>
+        <Button
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="Papír"
+            android:id="@+id/papir"
+            android:layout_margin="10dp"
+            >
+
+
+
+        </Button>
+        <Button
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="Olló"
+            android:id="@+id/ollo"
+            android:layout_margin="10dp"
+            >
+
+
+
+        </Button>
+
+    </LinearLayout>
+</RelativeLayout>
