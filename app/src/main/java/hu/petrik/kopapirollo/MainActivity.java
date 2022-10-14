@@ -91,6 +91,7 @@ public class MainActivity extends AppCompatActivity {
                             finish();
                         }
                     });
+                    alert.create().show();
                 }
 
 
@@ -155,6 +156,7 @@ public class MainActivity extends AppCompatActivity {
                             finish();
                         }
                     });
+                    alert.create().show();
                 }
 
             }
@@ -215,6 +217,7 @@ public class MainActivity extends AppCompatActivity {
                             finish();
                         }
                     });
+                    alert.create().show();
                 }
 
 
